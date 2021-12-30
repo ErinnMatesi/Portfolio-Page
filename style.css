@@ -1,0 +1,102 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* setting base colors for use throughout the site */
+:root {
+    --wheat: #F5E0B7;
+    --mauve: #5D2A42;
+    --gray: #857E7B;
+}
+
+/* HEADER DETAILS */
+header{
+    background-color: var(--mauve);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 10px solid var(--wheat);
+    color: var(--wheat);
+    border-color: var(--wheat);
+    z-index: 10;
+    padding: 20px 40px;
+}
+
+/* to make intro and nav sit in the same line */
+.header-wrap {
+    display: flex;
+}
+
+.intro {
+    width: 50%;
+}
+
+nav {
+    text-align: right;
+    width: 50%;
+}
+
+a {
+    color: var(--wheat);
+}
+
+li {
+    display: inline;
+    padding: 0px 20px;
+    text-decoration: none;
+  }
+
+/* BODY DETAILS */
+body{
+    background-color: var(--gray);
+    color: var(--wheat);
+}
+
+main{
+    margin: 72px 0 0 0;
+    display: block;
+}
+
+/* ABOUT ME DETAILS */
+
+.about-me {
+    padding: 20px;
+}
+
+.about-me div section {
+    padding: 0 0 0 15px;
+    line-height: 1.2;
+}
+
+.row {
+    margin: 5px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    row-gap: 5px;
+}
+
+h1 {
+    font-size: large;
+    text-align: left;
+}
+
+img{
+    border: 10px solid var(--mauve);
+}
+
+
+/* FOOTER DETAILS */
+footer{
+    background-color: var(--mauve);
+    height: 50px;
+    width: 100%;
+    border-bottom: 10px solid var(--wheat);
+    color: var(--wheat);
+    line-height: 3;
+    text-align: center;
+}
+
+/* TO DO media query needed for heading to collapse, it's already set to flex */
