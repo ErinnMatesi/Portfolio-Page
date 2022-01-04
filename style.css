@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 /* setting base colors for use throughout the site */
 :root {
     --wheat: #F5E0B7;
@@ -25,6 +26,7 @@ header {
 /* to make intro and nav sit in the same line */
 .header-wrap {
     display: flex;
+    row-gap: 5px;
 }
 
 .intro {
@@ -102,10 +104,12 @@ img {
     justify-content: space-evenly;
     row-gap: 40px;
     column-gap: 10px;
-    width: 80vw;
+    /* width: 80vw; */
+    padding-top: 15px;
 }
 
-.project1 {
+/* image itself needs to have its width set, not parent element */
+.project1 a img {
     width: 100%;
 }
 
@@ -113,15 +117,16 @@ h2 {
     background-color: var(--mauve);
     border-radius: 8px;
     text-align: center;
-    width: 40%;
-    line-height: 2;
-    font-size: 200%;
-    top: 4rem;
+    padding-right: auto;
+    padding-left: auto;
+    width: 35%;
+    line-height: 1.5;
+    font-size: 175%;
     z-index: 2;
+    /* position set to absolute so I could place it inside image and not have it's space reserved in the flow of the page */
+    position: absolute;
+    right: 0;
 }
-/* How do I remove extra space about each figure? It is not listed as margin or padding, just as part of the content but is not being filled */
-
-/* How to get CSS image to scale with page */
 
 /* CONTACT SECTION DETAILS */
 .text-center {
@@ -145,5 +150,29 @@ footer {
     text-align: center;
 }
 
-/* TO DO media query needed for heading to collapse, it's already set to flex */
+@media screen and (max-width: 947px) {
+    .header-wrap {
+        flex-direction: column;
+    }
+    
+    .intro {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    main {
+        margin: 88px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+}
+/* TO DO FIX media query for heading to collapse, it's stacking oddly */
 /* TO DO media query needed for About Me, it's already set to flex */
+/* TO DO add media query to adjust h2s to resize somehow*/
