@@ -83,9 +83,15 @@ section {
     padding-top: 10px;
     row-gap: 10px;
 } */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
+}
 
-.fixPad{
-    padding: 0;
+.row>* {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
 h1 {
@@ -101,6 +107,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     border: 10px solid var(--mauve);
+    width: 200px;
 }
 
 /* Flexbox CREATION */
@@ -124,11 +131,9 @@ h1 {
 .prjImg {
     width: 100%;
     border: 10px solid var(--mauve);
+    height: 275px;
 }
 
-.placeholder {
-    border: 10px solid var(--mauve);
-}
 
 h2 {
     background-color: var(--mauve);
@@ -146,10 +151,12 @@ h2 {
 }
 
 /* CONTACT SECTION DETAILS */
+
 .text-center {
     display: flex;
     justify-content: space-evenly;
     padding: 15px 0 0 0;
+    width: 100vw;
 }
 
 .text-center li a:hover {
@@ -165,6 +172,12 @@ footer {
     color: var(--wheat);
     line-height: 3;
     text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    h2 {
+        font-size: 150%;
+    }
 }
 
 @media screen and (max-width: 947px) {
@@ -192,10 +205,6 @@ footer {
 }
 
 @media screen and (max-width: 555px) {
-    .placeholder {
-        width: 80vw;
-    }
-
     h2 {
         font-size: 100%;
     }
