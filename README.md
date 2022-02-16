@@ -1,8 +1,15 @@
 # Portfolio-Page
 
-Ongoing portfolio page, intended eventually to display my work to potential employers.
+Ongoing portfolio page, currently includes 4 projects and one placeholder.
 
-Thus far, HTML and CSS have been used. Currently, the deployed CSS Cheatsheet is the only linked project.
+# Technologies Used
+- HTML
+- CSS
+- Bootstrap
+
+![Screenshot of Portfolio](./assets/images/portfolioSnip.PNG "screenshot")
+
+![Mobile Friendly](./assets/images/mobileSnip.PNG "mobile friendly")
 
 ## Live Site
 https://erinnmatesi.github.io/Portfolio-Page/
